@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/shared/Header';
-import Button from './components/paul/Button';
-import Input from './components/john/Input';
+import Button from './components/photo/Button';
+import Input from './components/video/Input';
 
 const App = () => {
     return (

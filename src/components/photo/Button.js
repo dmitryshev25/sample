@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 const Button = () => {
-    const [buttonText, setButtonText] = useState("John Button");
+    const [buttonText, setButtonText] = useState("Photo Button");
 
     const handleClick = () => {
-        setButtonText("John Button Clicked");
+        setButtonText("Photo Button Clicked");
     };
 
     return (

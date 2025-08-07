@@ -16,9 +16,11 @@ const Button = () => {
     };
 
     return (
-        <button onClick={handleClick}>
-            {buttonText}
-        </button>
+        <div>
+            <span>Button for photo page</span>
+            <button onClick={handleClick}>{buttonText}
+            </button>
+        </div>
     );
 };
 

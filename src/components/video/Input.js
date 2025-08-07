@@ -1,5 +1,5 @@
 const Input = () => {
-    const label = "Video";
+    const label = "Imput for Video page";
 
     return (
         <div>

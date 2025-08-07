@@ -18,6 +18,7 @@ const Button = () => {
     return (
         <div>
             <span>Button for photo page</span>
+            <br />
             <button onClick={handleClick}>{buttonText}
             </button>
         </div>

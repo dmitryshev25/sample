@@ -1,18 +1,29 @@
+import { useState } from 'react';
+
 import './App.css';
-import Header from './components/shared/Header';
-import Button from './components/photo/Button';
-import Input from './components/video/Input';
+import Header from './shared/layout/header/Header';
+import Button from './shared/UI/button/Button';
+import Input from './shared/UI/input/Input';
+import { Footer } from './shared/layout/footer/Footer';
+import { Main } from './shared/layout/main/Main';
 
 const App = () => {
+
+    const [buttonText, setButtonText] = useState("Photo Button");
+
     return (
-        <div className="App">
-            <header className="App-header">
+        <>
+            <Header />
+            <Main>
                 <p>First Component</p>
-                <Header />
-                <Button />
+                <Button 
+                    text={buttonText}
+                    onClick={setButtonText}
+                />
                 <Input />
-            </header>
-        </div>
+            </Main>
+            <Footer />
+        </>
     );
 };
 
